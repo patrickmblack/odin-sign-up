@@ -1,6 +1,7 @@
 body{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
 }
 
 .page{
@@ -28,15 +29,39 @@ body{
     width: 40vw;
 }
 
+
+.content{
+    display: flex;
+    width: 60rw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 2;
+}
+
+.header{
+    padding: 0 2vw;
+}
+
+.form-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: wheat;
+    padding: 1.2rem;
+    box-shadow: 0px 5px 5px black;
+}
+
+
 form{
     display: flex;
     width: 60vw;
     flex-flow: row wrap;
     gap: 1rem;
     margin: 20px;
-    justify-content: center;
-
 }
+
+/*
 
 .content{
     display: flex;
@@ -64,4 +89,4 @@ form{
 .sign-up-info{
     margin-top: 2rem;
     padding: 0px 2vw;
-}
+} */
