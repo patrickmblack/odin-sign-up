@@ -4,59 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="page">
         <div class="photo">
-            <div class="color-fill" style="background-color: green; width: 200px;"></div>
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/77/62/b5/7762b52dd335d99899ee09ad163cd688.jpg" class="logo-pic">
+                <h1>Magpie Prod.</h1>
+            </div>
         </div>
         <div class="content">
-            <p>Sign up for this fake stuff!</p>
-            <form method="post" id="contact-info">
-                <h2>Let's get this party started!</h2>
+            <!-- <p>Sign up for this fake stuff!</p> -->
 
-                <div class="contact">
-                    <label for="first-name">
-                        <p>FIRST NAME</p>
-                    </label>
-                    <input type="text" id="first-name" name="userfirstname" required
-                    minlength="2" maxlength="7">
-                </div>
-                <div class="contact">
-                    <label for="last-name">
-                        <p>LAST NAME</p>
-                    </label>
-                    <input type="text" id="last-name" name="userlastname">
-                </div>
-                <div class="contact">
-                    <label for="email">
-                        <p>EMAIL</p>
-                    </label>
-                    <input type="email" id="email" name="usermail" required>
-                </div>
-                <div class="contact">
-                    <label for="phonenum">
-                        <p>PHONE NUMBER</p>
-                    </label>
-                    <input type="tel" id="phonenum" name="userphone">
-                </div>
-                <div class="contact">
-                    <label for="pwd">
-                        <p>PASSWORD</p>
-                    </label>
-                    <input type="password" id="pwd" name="userpass" required
-                    minlength="4" maxlength="7"/>
-                </div>
-                <div class="contact">
-                    <label for="confirm-pwd">
-                        <p>CONFIRM PASSWORD</p>
-                    </label>
-                    <input type="password" id="confirm-pwd" name="userpass" required
-                    minlength="4" maxlength="7"/>
-                </div>
+            <div class="form-content">
 
-            </form>
-            <button type="submit" form="contact-info" value="sign-up">Sign Up</button>
+                <div class="header">
+                    <h2>Let's get this party started!</h2>
+                </div>
+                <form method="post" id="contact-info">
+                    <div class="contact">
+                        <label for="first-name">
+                            <p>FIRST NAME</p>
+                        </label>
+                        <input type="text" id="first-name" name="userfirstname" required
+                        minlength="2" maxlength="7">
+                    </div>
+                    <div class="contact">
+                        <label for="last-name">
+                            <p>LAST NAME</p>
+                        </label>
+                        <input type="text" id="last-name" name="userlastname">
+                    </div>
+                    <div class="contact">
+                        <label for="email">
+                            <p>EMAIL</p>
+                        </label>
+                        <input type="email" id="email" name="usermail" required>
+                    </div>
+                    <div class="contact">
+                        <label for="phonenum">
+                            <p>PHONE NUMBER</p>
+                        </label>
+                        <input type="tel" id="phonenum" name="userphone">
+                    </div>
+                    <div class="contact">
+                        <label for="pwd">
+                            <p>PASSWORD</p>
+                        </label>
+                        <input type="password" id="pwd" name="userpass" required
+                        minlength="4" maxlength="7"/>
+                    </div>
+                    <div class="contact">
+                        <label for="confirm-pwd">
+                            <p>CONFIRM PASSWORD</p>
+                        </label>
+                        <input type="password" id="confirm-pwd" name="userpass" required
+                        minlength="4" maxlength="7"/>
+                    </div>
+                </form>
+                <div class="sign-up-info">
+                    <button type="submit" form="contact-info" value="sign-up" id="btn-sign-up">Sign Up</button>
+                    <p>Already have an account? <a href>Log In</a></p>
+                </div>
+            </div>
         </div>
     </div>    
 </body>
