@@ -2,6 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     font-size: 1.2rem;
+    background-color: aliceblue;
 }
 
 .page{
@@ -23,10 +24,25 @@ body{
 
 .photo{
     flex-grow: 1;
+    position: relative;
+    width: 40vw;
+    min-width: 300px;
     height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: auto;
-    width: 40vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.photo div{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -39,17 +55,21 @@ body{
     flex-grow: 2;
 }
 
-.header{
+.header, .call-to-action{
     padding: 0 2vw;
+}
+
+.call-to-action{
+    font-size: 2rem;
 }
 
 .form-content{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
     padding: 1.2rem;
-    box-shadow: 0px 5px 5px black;
+    box-shadow: 0px 5px 5px rgb(231, 231, 231);
 }
 
 
@@ -58,8 +78,29 @@ form{
     width: 60vw;
     flex-flow: row wrap;
     gap: 1rem;
-    margin: 20px;
+    font-size: 1rem;
 }
+
+.contact{
+    position: relative;
+    width: 15rem;
+}
+
+#btn-sign-up{
+    width: fit-content;
+    position: relative;
+    font-size: 1.5rem;
+    background-color: gray;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem 1.5rem;
+
+}
+.sign-up-info{
+    margin-top: 2rem;
+    padding: 0px 2vw;
+}
+
 
 /*
 
@@ -73,20 +114,4 @@ form{
     flex-direction: column;
     padding: 1.5rem;
     background-color: green;
-}
-
-#btn-sign-up{
-    width: fit-content;
-    position: relative;
-    font-size: 1.5rem;
-    background-color: gray;
-    border-radius: 10px;
-    border: none;
-    padding: 1rem 1.5rem;
-
-}
-
-.sign-up-info{
-    margin-top: 2rem;
-    padding: 0px 2vw;
 } */
