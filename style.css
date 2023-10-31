@@ -90,7 +90,8 @@ form{
     width: fit-content;
     position: relative;
     font-size: 1.5rem;
-    background-color: gray;
+    background-color: #455d70;
+    color: aliceblue;
     border-radius: 10px;
     border: none;
     padding: 1rem 1.5rem;
@@ -99,6 +100,15 @@ form{
 .sign-up-info{
     margin-top: 2rem;
     padding: 0px 2vw;
+}
+
+input:invalid{
+    border: 2px solid red;
+} 
+
+
+input:optional{
+    border: 1px solid silver;
 }
 
 
