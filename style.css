@@ -111,6 +111,10 @@ input:optional{
     border: 1px solid silver;
 }
 
+input:focus {
+    border: 1px solid blue;
+}
+
 
 /*
 
